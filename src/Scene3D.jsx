@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { useGLTF, useAnimations, Stage, Center } from '@react-three/drei'
 import { EffectComposer, Bloom } from '@react-three/postprocessing'
