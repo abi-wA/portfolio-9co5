@@ -17,8 +17,7 @@ function Model() {
             obj.material.transparent = true
             obj.material.blending = THREE.AdditiveBlending
             obj.material.depthWrite = false
-            obj.material.emissiveIntensity = 0.85
-            obj.material.opacity = 0.01;
+            obj.material.emissiveIntensity = 0.5
         }
         })
     }, [actions, animations, scene])
@@ -62,7 +61,7 @@ export default function Scene3D({ scrollY }) {
             <Rig scrollY={scrollY} />
 
             <EffectComposer>
-                <Bloom luminanceThreshold={0.4} mipmapBlur intensity={1.5} radius={0.4} />
+                <Bloom luminanceThreshold={0.4} mipmapBlur intensity={1} radius={0.6} />
             </EffectComposer>
         </Canvas>
         </div>

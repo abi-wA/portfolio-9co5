@@ -48,6 +48,9 @@ table {
     height: 100vh;
     position: fixed;
 }
+#scene-container canvas {
+	opacity: 0.7;
+}
 
 body {
     height: 500vh;
